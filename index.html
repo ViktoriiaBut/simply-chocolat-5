@@ -19,15 +19,21 @@
                 <span class="header-logo-accent">SIMPLY</span> CHOCOLATE <img src="./images/logo-icon.svg" alt="logo icon">
             </a>
     <ul class="header-menu list">
-            <li class="header-menu-item"><a class="header-menu-link link" >Home</a></li>
+            <li class="header-menu-item"><a class="header-menu-link link current" >Home</a></li>
             <li class="header-menu-item"><a class="header-menu-link link" #made>How it’s made?</a></li>
             <li class="header-menu-item"><a class="header-menu-link link" #footer>Chocolate is loved</a></li>
            </ul>
         </nav>
         <ul class="header-socials list">
-            <li class="header-socials-item"><a class="header-socials-link link" href="" aria-label="instagram" target="_blank" rel="noopener noreferrent" >insta</a>
+            <li class="header-socials-item"><a class="header-socials-link link" href="" aria-label="instagram" target="_blank" rel="noopener noreferrent" ></a>
+                <svg class="header-socials-icones" width="24" height="24">
+                    <use href="./icones/symbol-defs.svg#icon-instagram"></use>
+                </svg>
             </li>
-            <li class="header-socials-item"><a class="header-socials-link link" href="" aria-label="twitter" target="_blank" rel="noopener noreferrent" >twitter</a>
+            <li class="header-socials-item"><a class="header-socials-link link" href="" aria-label="twitter" target="_blank" rel="noopener noreferrent" ></a>
+                <svg class="header-socials-icones" width="24" height="24">
+                    <use href="./icones/symbol-defs.svg#icon-twitter"></use>
+                </svg>
             </li>
         </ul>
     </div>
@@ -54,17 +60,27 @@
             <h2 class="visually-hidden">Advanteges</h2>
            <ul class="advanteges-list list">
             <li class="advanteges-item">
+                <div class="advanteges-block"><svg class="advanteges-socials-icones" width="32" height="32">
+                    <use href="./icones/symbol-defs.svg#icon-choco-bar"></use>
+                </svg></div>
                 <h3 class="advanteges-subtitle">Unsurpassed taste</h3>
+                
                     <p class="advanteges-item-text">Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
 
                     </p>   
             </li>
             <li class="advanteges-item">
+                <div class="advanteges-block"><svg class="advanteges-socials-icones" width="32" height="32">
+                    <use href="./icones/symbol-defs.svg#icon-Coin"></use>
+                </svg></div>
                 <h3 class="advanteges-subtitle">Affordable price</h3>
                     <p class="advanteges-item-text">Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.
                     </p>
                             </li>
             <li class="advanteges-item">
+                <div class="advanteges-block"><svg class="advanteges-socials-icones" width="32" height="32">
+                    <use href="./icones/symbol-defs.svg#icon-spoon"></use>
+                </svg></div>
                 <h3 class="advanteges-subtitle">Own production</h3>
                     <p class="advanteges-item-text">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.
 
@@ -84,6 +100,9 @@
                 <li class="taste-item">
                     <img src="./images/chocolate.png" alt="chocolate" width="206" height="160" class="taste-img">
                     <h3 class="taste-subtitle light">MILK CHOCOLATE</h3>
+                    <p class="taste-cover-text">Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most consumed type of chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although four-fifths of all milk chocolate is sold in the United States and Europe.
+
+                    </p>
                 </li>
                 <li class="taste-item">
                     <img src="./images/milk.png" alt="milk" width="206" height="160" class="taste-img">
@@ -133,20 +152,20 @@
         <h2 class="loved-title section-title"><span>chocolate</span> is loved</h2>
         <ul class="loved-list list">
             <li class="loved-item">
-                 <img src="./images/Victoria.jpg" alt="Victoria Dobrzhanska" width="80" height="80"/> 
+                 <img src="./images/Victoria.jpg" alt="Victoria Dobrzhanska" width="80" height="80" class="loved-img"/> 
                 <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
                 <p class="loved-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
             </li>
-            <li class="loved-item"> <img src="./images/Nazar.jpg" alt="Nazar Babenko" width="80" height="80"/>
+            <li class="loved-item"> <img src="./images/Nazar.jpg" alt="Nazar Babenko" width="80" height="80" class="loved-img"/>
                 <h3 class="loved-subtitle">Nazar Babenko</h3>
                 <p class="loved-text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
             </li>
-            <li class="loved-item"> <img src="./images/Olena.jpeg" alt="Olena Kampusch" width="80" height="80"/>
+            <li class="loved-item"> <img src="./images/Olena.jpeg" alt="Olena Kampusch" width="80" height="80" class="loved-img"/>
                 <h3 class="loved-subtitle">Olena Kampusch</h3>
                 <p class="loved-text"> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
             </li>
         </ul>
-        <button type="button" class="loved-btn">Leave  a review</button>
+        <button type="button" class="loved-btn" data-modal-open>Leave  a review</button>
     </div>
     </section>
 
@@ -174,5 +193,51 @@
         </nav>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close><svg class="advanteges-socials-icones" width="32" height="32">
+                <use href="./icones/symbol-defs.svg#icon-Coin"></use>
+            </svg>
+        </button>
+        <p class="modal-title">LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span></p>
+        <form class="modal-form">
+            <label class="input-label"><span class="input-label-text">Name</span>
+                <span class="input-wrap">
+                <input type="text" name="user-name" class="modal-input" placeholder="Enter name" required minlength="3" maxlength="10"/><svg class="modal-input-icon" width="24" heigth="24">
+                    <use href="./icones/symbol-defs.svg#icon-user"></use></svg>
+                </span>
+                                </label>
+            <div class="modal-field">
+            <label for="user-email" class="input-label"><span class="input-label-text">Email</span></label>
+            <div class="input-wrap">
+                <input type="email" name="user-email" class="modal-input" placeholder="Enter email" id="user-email"/><svg class="modal-input-icon" width="24" heigth="24">
+                    <use href="./icones/symbol-defs.svg#icon-user"></use></svg>
+            </div>
+                        </div>
+            <label class="input-label"><span class="input-label-text">Phone number</span>
+                <span class="input-wrap">
+                              <input type="tel" name="user-tel" class="modal-input" placeholder="Enter phone"/><svg class="modal-input-icon" width="24" heigth="24">
+                    <use href="./icones/symbol-defs.svg#icon-user"></use></svg>
+                </span>
+            </label>
+
+            <div class="modal-field">
+                <label for="user-text" class="input-label"><span class="input-label-text">Comment</span></label>
+                <textarea name="user-text" id="user-text" class="modal-textarea" placeholder="Enter text"></textarea>
+                            </div>
+            <div class="modal-field">
+                <input type="checkbox" name="user-terms" id="user-terms" value="one" class="modal-check"/>
+                <label for="user-terms" class="check-text"><span><svg class="check-icon" wigth="10" height="10" 
+                    ><use href="./icones/symbol-defs.svg#icon-icon"></use>
+                </svg>
+                </span>I accept the terms and conditions of the<a href="" class="privacy-link">Privacy Policy</a></label>
+            </div>
+
+                <button type="submit" class="modal-form-btn" disabled>Send</button>
+        </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
+
 </html>
