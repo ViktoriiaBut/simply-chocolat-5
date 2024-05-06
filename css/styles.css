@@ -512,7 +512,10 @@ letter-spacing: -0.02em;
 text-align: center;
 color: var(--secondary-text-color);
 }
-
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
 .footer-navigation {
     display: flex;
   gap: 24px;
@@ -529,6 +532,42 @@ line-height: 1.28571;
 letter-spacing: -0.02em;
 text-align: center;
 color: #fff;
+}
+
+transform: translateY(-250%);
+
+.footer-menu-item {
+}
+.footer-form {
+}
+.footer-input {
+    border: 1.50px solid rgba(255, 255, 255, 0.15);
+border-radius: 30px;
+padding: 14px 24px;
+width: 233px;
+height: 45px;
+background-color: transparent;
+margin-right: 8px;
+outline: transparent;
+color: #FAFAFA;
+}
+.footer-input:focus {
+    border-color: #fd9222;
+ 
+}
+.footer-input::placeholder {
+    font-weight: 400;
+font-size: 14px;
+letter-spacing: -0.02em;
+color: rgba(255, 255, 255, 0.3);
+}
+.footer-form-btn {
+    border-radius: 100px;
+padding: 14px 28px;
+width: 128px;
+height: 45px;
+border: none;
+background: #fd9222;
 }
 
 /*---------MODAL------*/
